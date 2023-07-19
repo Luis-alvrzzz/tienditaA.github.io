@@ -1,0 +1,13 @@
+<ng-container *ngIf="coctel">
+    <h2>{{ coctel.id}}</h2>
+    <p>{{coctel.title}}</p>
+    <p>{{coctel.price}}</p>
+    <p>{{coctel.description}}</p>
+    <p>{{coctel.category}}</p>
+    <img [src]="coctel.image" alt="">
+    <p>rate: {{coctel.rating[0]}} count: {{coctel.rating[1]}}</p>
+
+</ng-container>
+<ng-container *ngIf="!coctel">
+    Coctel no renderizado
+</ng-container>
